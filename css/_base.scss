@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+$main-background: hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$stats-color: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+$accent-color: hsl(277, 64%, 61%);
+$font: 15px;
+$family1: "Inter", sans-serif;
+$family2: "Lexend Deca", sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

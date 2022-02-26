@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #090b1a;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+/* # sourceMappingURL=style.css.map */
