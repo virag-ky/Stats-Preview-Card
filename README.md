@@ -21,11 +21,12 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
+![screencapture-virag-ky-github-io-Stats-Preview-Card-2022-02-27-16_26_42](https://user-images.githubusercontent.com/79658534/155886456-e54f90b4-6382-450f-b800-ddd5c276fa56.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://virag-ky.github.io/Stats-Preview-Card/](https://virag-ky.github.io/Stats-Preview-Card/)
 
 ## My process
 
