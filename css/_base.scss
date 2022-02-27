@@ -10,6 +10,8 @@ $accent-color: hsl(277, 64%, 61%);
 $font: 1rem;
 $family1: "Inter", sans-serif;
 $family2: "Lexend Deca", sans-serif;
+$text-center: center;
+$text-left: left;
 
 * {
   box-sizing: border-box;
@@ -22,8 +24,4 @@ $family2: "Lexend Deca", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-@mixin text-center {
-  text-align: center;
 }
