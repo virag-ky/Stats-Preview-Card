@@ -36,10 +36,14 @@ main.card div#image-container {
   position: relative;
 }
 
-main.card div#image-container img {
+main.card div#image-container #mobile-image {
   width: 100%;
   border-radius: 5px 5px 0 0;
   display: block;
+}
+
+main.card div#image-container #desktop-image {
+  display: none;
 }
 
 main.card div#image-container div#image-color {
@@ -128,4 +132,56 @@ footer .attribution {
 footer .attribution a {
   color: #aa5cdb;
   text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+    padding: 0;
+  }
+
+  main.card {
+    width: 95vw;
+    max-width: 1000px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  main.card div#image-container #mobile-image {
+    display: none;
+  }
+
+  main.card div#image-container #desktop-image {
+    display: block;
+  }
+
+  main.card div#card-content {
+    padding: 30px 43px 10px 43px;
+  }
+
+  main.card div#card-content h1,
+  main.card div#card-content p {
+    text-align: left;
+  }
+
+  div#stats-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 70px;
+  }
+
+  div#stats-container div.stats {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }

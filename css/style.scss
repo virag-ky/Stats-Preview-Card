@@ -18,10 +18,14 @@ main.card {
   div#image-container {
     position: relative;
 
-    img {
+    #mobile-image {
       width: 100%;
       border-radius: 5px 5px 0 0;
       display: block;
+    }
+
+    #desktop-image {
+      display: none;
     }
 
     div#image-color {
@@ -39,9 +43,7 @@ main.card {
 
     h1 {
       color: $stats-color;
-
-      @include text-center;
-
+      text-align: $text-center;
       margin-top: 30px;
 
       span {
@@ -50,8 +52,7 @@ main.card {
     }
 
     p {
-      @include text-center;
-
+      text-align: $text-center;
       color: $main-paragraph;
       margin-top: 20px;
       line-height: 1.5;
@@ -90,12 +91,55 @@ footer {
 
   .attribution {
     color: $stats-color;
-
-    @include text-center;
+    text-align: $text-center;
 
     a {
       color: $accent-color;
       text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+    padding: 0;
+  }
+
+  main.card {
+    width: 95vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    div#image-container {
+      #mobile-image {
+        display: none;
+      }
+
+      #desktop-image {
+        display: block;
+      }
+    }
+
+    div#card-content {
+      padding: 30px 43px 10px 43px;
+
+      h1,
+      p {
+        text-align: $text-left;
+      }
+    }
+  }
+
+  div#stats-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 70px;
+
+    div.stats {
+      align-items: flex-start;
     }
   }
 }
