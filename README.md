@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-YYDn1z3w8N](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-YYDn1z3w8N)
 - Live Site URL: [https://virag-ky.github.io/Stats-Preview-Card/](https://virag-ky.github.io/Stats-Preview-Card/)
 
 ## My process
