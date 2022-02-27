@@ -10,7 +10,122 @@
 
 body {
   background: #090b1a;
-  font-size: 15px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+main.card {
+  background-color: #1b1938;
+  width: 90vw;
+  border-radius: 5px;
+}
+
+main.card div#image-container {
+  position: relative;
+}
+
+main.card div#image-container img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+
+main.card div#image-container div#image-color {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #8c00e9;
+  opacity: 0.4;
+}
+
+main.card div#card-content {
+  padding: 0 30px 35px 30px;
+}
+
+main.card div#card-content h1 {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main.card div#card-content h1 span {
+  color: #aa5cdb;
+}
+
+main.card div#card-content p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+div#stats-container {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 35px;
+}
+
+div.stats {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+div.stats .bold {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
   font-family: "Inter", sans-serif;
 }
-/* # sourceMappingURL=style.css.map */
+
+div.stats .stat {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer .attribution {
+  color: white;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: #aa5cdb;
+  text-decoration: none;
+}

@@ -4,4 +4,98 @@ body {
   background: $main-background;
   font-size: $font;
   font-family: $family1;
+
+  @include flex-column;
+
+  padding: 50px 0;
+}
+
+main.card {
+  background-color: $card-background;
+  width: 90vw;
+  border-radius: 5px;
+
+  div#image-container {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      display: block;
+    }
+
+    div#image-color {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(140, 0, 233);
+      opacity: 0.4;
+    }
+  }
+
+  div#card-content {
+    padding: 0 30px 35px 30px;
+
+    h1 {
+      color: $stats-color;
+
+      @include text-center;
+
+      margin-top: 30px;
+
+      span {
+        color: $accent-color;
+      }
+    }
+
+    p {
+      @include text-center;
+
+      color: $main-paragraph;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+  }
+}
+
+div#stats-container {
+  @include flex-column;
+
+  gap: 22px;
+  margin-top: 35px;
+}
+
+div.stats {
+  @include flex-column;
+
+  gap: 5px;
+
+  .bold {
+    color: $stats-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $family1;
+  }
+
+  .stat {
+    color: $stat-headings;
+    font-size: 0.8rem;
+    font-family: $family2;
+  }
+}
+
+footer {
+  margin-top: 20px;
+
+  .attribution {
+    color: $stats-color;
+
+    @include text-center;
+
+    a {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
 }

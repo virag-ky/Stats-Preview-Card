@@ -7,7 +7,7 @@ $stats-color: hsl(0, 0%, 100%);
 $main-paragraph: hsla(0, 0%, 100%, 0.75);
 $stat-headings: hsla(0, 0%, 100%, 0.6);
 $accent-color: hsl(277, 64%, 61%);
-$font: 15px;
+$font: 1rem;
 $family1: "Inter", sans-serif;
 $family2: "Lexend Deca", sans-serif;
 
@@ -15,4 +15,15 @@ $family2: "Lexend Deca", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-center {
+  text-align: center;
 }
